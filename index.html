@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet"> 
+
+    <title>Linux - strona główna</title>
+</head>
+<body>
+    
+    <header class = "header">
+            <i class="fab fa-linux"></i><br/>
+            <p>O jądrze</p>
+            <p>Dokumentacja</p>
+            <p>Lista dystrybucji</p>
+            <p>Własna dystrubycja</p>
+            <p>Zacznij z linuxem</p>
+            <p>DistroChooser</p>
+            <p>O autorach</p>
+            <p>Kontakt</p>
+    </header>
+    <content>
+        <img src = "assets/tux.svg" alt = "Obraz tuxa, maskotki jądra Linux"  />
+        <h1>Witaj w świecie Linuxa</h1>
+        <p>Tutaj znajdziesz wszystko o tej rodzinie systemów <br/> i samym jądrze</p>
+        <a href = "#" class = "link-button">Zacznij z linuxem</a>
+    </content>
+    <article id = "distro-article">
+        <h2 class = "distro-header">Wybierz Dystrybucję dla siebie...</h2>
+        <div class = "distro-slider" id = "distro-slider">
+            <!--TODO: Naprawić slider-->
+            <div class = "arrow"><button id = "back" class = "button-skip"><i class="fas fa-arrow-circle-left"></i></button></div>
+            <div id = "slider" class = "slider">
+            <noscript> <h1>Obsługa Javascriptu nie działa więc nie zobaczysz slidera</h1><img src="assets/ubuntu-desktop.jpg" alt = "pulpit dystrybucji ubuntu"/>
+                <h3>Ubuntu - Niezawodny Start z Linuxem</h3>
+                <p>ubuntu - najpopularniejsze distro z przyjaznym środowiskiem GNOME
+                    <br/>
+                    Polecane na rozpoczęcie przygody z linuxem
+                </p>
+                <br/>
+                <a href = "#" class = "distro-button"  >Pobierz Ubuntu</a></noscript> 
+            </div> 
+            <div class = "arrow"><button id = "next" class = "button-skip" id = "distro-button"><i class="fas fa-arrow-circle-right"></i></button></div>
+        </div>
+        
+        
+    </article>
+
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/12073a185e.js" crossorigin="anonymous"></script>
+    <script src = "scripts/slider.js"></script>
+    <script>
+    
+    </script>
+</body>
+</html>
