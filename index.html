@@ -20,22 +20,19 @@
             <p>O jądrze</p>
             <p>Dokumentacja</p>
             <p>Lista dystrybucji</p>
-            <p>Własna dystrubycja</p>
+            <a href = "https://www.idalko.com/build-linux-distribution/"><p>Własna dystrubycja</p></a>
             <p>Zacznij z linuxem</p>
-            <p>DistroChooser</p>
-            <p>O autorach</p>
-            <p>Kontakt</p>
+            <a href = "https://beta.distrochooser.de/"><p>DistroChooser</p></a>
     </header>
-    <content>
+    <article>
         <img src = "assets/tux.svg" alt = "Obraz tuxa, maskotki jądra Linux"  />
         <h1>Witaj w świecie Linuxa</h1>
         <p>Tutaj znajdziesz wszystko o tej rodzinie systemów <br/> i samym jądrze</p>
         <a href = "#" class = "link-button">Zacznij z linuxem</a>
-    </content>
-    <article id = "distro-article">
+    </article>
+    <article id = "distro-article" class="white-article">
         <h2 class = "distro-header">Wybierz Dystrybucję dla siebie...</h2>
         <div class = "distro-slider" id = "distro-slider">
-            <!--TODO: Naprawić slider-->
             <div class = "arrow"><button id = "back" class = "button-skip"><i class="fas fa-arrow-circle-left"></i></button></div>
             <div id = "slider" class = "slider">
             <noscript> <h1>Obsługa Javascriptu nie działa więc nie zobaczysz slidera</h1><img src="assets/ubuntu-desktop.jpg" alt = "pulpit dystrybucji ubuntu"/>
@@ -49,8 +46,19 @@
             </div> 
             <div class = "arrow"><button id = "next" class = "button-skip" id = "distro-button"><i class="fas fa-arrow-circle-right"></i></button></div>
         </div>
-        
-        
+    </article>
+    <article class = "own-distro-article">
+        <h2>...Lub stwórz swoją własną</h2>
+        <a href = "https://github.com/torvalds/linux" class = "github-link">
+            <span class = "big-icon">
+                <i class="fab fa-github"></i>
+            </span>
+            <p>Link do jądra Linux na gituhb</p>
+        </a>
+    </article>
+    <article class = "white-article">
+        <h2>Dołącz do Społeczności Już dziś</h2>
+        <img src = "assets/tuxes.jpg" alt = "Obraz Tuxa w dwóch przebraniach" />
     </article>
 
     <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
