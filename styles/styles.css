@@ -158,3 +158,15 @@ content, article{
 .github-link:hover{
     color: rgb(41, 41, 41);
 }
+
+.tux-image{
+    width: 40em;
+}
+
+.last{
+    height: 30em;
+}
+
+.sad-tux{
+    height: 30em;
+}
