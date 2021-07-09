@@ -14,9 +14,11 @@
     <title>Linux - strona główna</title>
 </head>
 <body>
-    
-    <header class = "header">
-            <i class="fab fa-linux"></i><br/>
+    <div class = "logo" onclick="openNav()">
+        <i class="fab fa-linux"></i><br/>
+    </div>
+    <header class = "header" id = "header">
+            
             <a href = "https://www.kernel.org/linux.html"><p>O jądrze</p></a>
             <a href = "https://www.kernel.org/doc/"><p>Dokumentacja</p></a>
             <a href = "https://en.wikipedia.org/wiki/List_of_Linux_distributions"><p>Lista dystrybucji</p></a>
@@ -35,7 +37,7 @@
         <div class = "distro-slider" id = "distro-slider">
             <div class = "arrow"><button id = "back" class = "button-skip"><i class="fas fa-arrow-circle-left"></i></button></div>
             <div id = "slider" class = "slider">
-            <noscript> <h1>Obsługa Javascriptu nie działa więc nie zobaczysz slidera</h1><img src="assets/ubuntu-desktop.jpg" alt = "pulpit dystrybucji ubuntu"/>
+                <noscript> <h1>Obsługa Javascriptu nie działa więc nie zobaczysz slidera</h1><img src="assets/ubuntu-desktop.jpg" alt = "pulpit dystrybucji ubuntu"/>
                 <h3>Ubuntu - Niezawodny Start z Linuxem</h3>
                 <p>ubuntu - najpopularniejsze distro z przyjaznym środowiskiem GNOME
                     <br/>
@@ -58,12 +60,12 @@
     </article>
     <article class = "white-article last">
         <h2>Dołącz do nas Już dziś</h2>
-        <img class = "tux-image" src = "assets/tuxes.jpg" alt = "Obraz Tuxa w dwóch przebraniach" />
     </article>
 
     <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/12073a185e.js" crossorigin="anonymous"></script>
     <script src = "scripts/slider.js"></script>
+    <script src = "scripts/sidenav.js"></script>
     <script>
     
     </script>

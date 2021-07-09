@@ -105,6 +105,7 @@ content, article{
     padding: 2%;
 
     display: flex;
+    justify-content: center;
 }
 
 .distro-header{
@@ -115,7 +116,7 @@ content, article{
     width: 80%;
     height: 100%;
     color: #fff;
-    padding-bottom: 10%;
+    text-align: center;
 }
 
 .arrow{
@@ -164,9 +165,51 @@ content, article{
 }
 
 .last{
-    height: 30em;
+    height: 5em;
 }
 
 .sad-tux{
     height: 30em;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1020px){
+    .slider{
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: 695px){
+    .header {
+        flex-direction: column;
+        height: 100%; 
+        width: 0px; 
+        position: fixed; 
+        z-index: 0; 
+        top: 0; 
+        left: 0;
+        background-color: #fff; ;
+        overflow-x: hidden; 
+        transition: 0.5s; 
+        font-size: 0px;
+    }
+
+    .slider{
+        padding-top: 50%;
+        font-size: 20px;
+    }
+
+    .big-icon{
+        font-size: 20em;
+    }
+}
+
+@media (min-width: 695px){
+    .header{
+        font-size: medium;
+    }
 }
